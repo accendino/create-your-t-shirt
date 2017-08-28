@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Создай свою футболку!</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+	<a href="#" target="_blank">
+		<img src="img/logo/logo.png" alt="Логотип" class="logo">
+	</a>
+	<div class="title">
+	    <a href="#">
+	        <h1>Создай свою футболку</h1>		
+	    </a>
+	</div>
+
+
+	<div id="imgHolder" class="imgHolder">
+		<img id="t-shirt" src="img/black.png" alt="unisex t-shirt">
+		<img id="print-design" src="img/prints/donkey.png" alt="Donkey" class="printItemMain" style="display: none"></img>
+
+		<div class="model-summary">
+			<div class="model-name">Футболка unisex</div>
+			<div class="model-specs" id="modelSpecs"></div>
+			<div class="model-price" id="modelPrice"></div>
+			<div class="model-price" id="modelPriceUSD"></div>
+			<div class="button">Заказать</div>
+		</div>	
+	</div>
+
+	<form id="autoForm">
+	    <a href="#autoForm">
+		    <h2>Параметры</h2>
+	    </a>
+		<div class="row">
+			<!-- col-1-of-3 -->
+			<div class="col-1-of-3">
+				<h4>Добавить принт</h4>
+
+				<div class="form-block">
+					<input type="radio" name="print" id="without-print" value="2000" checked>
+					<label for="without-print">Без принта</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="print" id="with-print" value="2600">
+					<label for="with-print">С принтом</label>
+				</div>
+			</div>
+			<!-- // col-1-of-3 -->
+			<!-- col-1-of-3 -->
+			<div class="col-1-of-3">
+				<h4>Упаковка</h4>
+
+				<div class="form-block">
+					<input type="radio" name="wrap" id="wrap-standard" value="0" checked>
+					<label for="wrap-standard">обычная упаковка</label>
+				</div>
+
+				<div class="form-block">
+					<input type="radio" name="wrap" id="wrap-present" value="500">
+					<label for="wrap-present">завернуть как подарок</label>
+				</div>
+			</div>
+			<!-- // col-1-of-3 -->
+			<!-- col-1-of-3 -->
+			<div class="col-1-of-3">
+				<h4>Доставка</h4>
+
+				<div class="form-block">
+					<input type="radio" name="delivery" id="delivery-standard" value="0" checked>
+					<label for="delivery-standard">стандартная доставка (7 рабочих дней)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="delivery" id="delivery-express" value="700">
+					<label for="delivery-express">эспресс доставка (следующий рабочий день)</label>
+				</div>
+
+			</div>
+			<!-- // col-1-of-3 -->
+		</div>		
+
+		<h4>Цвет</h4>
+		<div class="form-block">
+			<div id="colorsSelector" class="colorsSelector">
+				<div class="colorItem colorBlue" data-img-path="img/blue.png"></div>
+				<div class="colorItem colorAqua"  data-img-path="img/aqua.png"></div>
+				<div class="colorItem colorRed"  data-img-path="img/red.png"></div>
+				<div class="colorItem colorBlack"  data-img-path="img/black.png"></div>
+				<div class="colorItem colorWhite"  data-img-path="img/white.png"></div>
+				<div class="colorItem colorPurple"  data-img-path="img/purple.png"></div>
+				<div class="colorItem colorGrey"  data-img-path="img/grey.png"></div>
+			</div>
+		</div>
+
+		<h4>Принты</h4>
+		<div class="form-block">
+			<div id="printSelector" class="printSelector">
+				<img src="img/prints/afro-robot.png" alt="Afro robot" class="printItem"></img>
+				<img src="img/prints/donkey.png" alt="Donkey" class="printItem"></img>
+				<img src="img/prints/funny-cat.png" alt="Funny cat" class="printItem"></img>
+				<img src="img/prints/funny-monkey.png" alt="Funny monkey" class="printItem"></img>
+				<img src="img/prints/meditating-robot.png" alt="Meditating robot" class="printItem"></img>
+			</div>
+		</div>
+
+		<h4>Выберите размер</h4>
+		<p>Здесь будут размеры, они не влияют на цену.</p>	
+
+	</form>
+
+	<h4>Информация о товаре</h4>
+	<p>100%й хлопковый хлопок и классные стойкие принты.</p>
+
+
+	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script src="libs/jQuery-currency/money.jquery.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
